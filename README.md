@@ -1,6 +1,8 @@
 # Helix Monorepo for Projects and Libraries
+Todo add lerna add docs.
 
-### Run below commands to make this code working
+
+### Run the following
 
 - ##### Install lerna globally 
 `npm i -g lerna`
