@@ -1,6 +1,6 @@
 {
   "name": "helixmonorepo-lib",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "> library of shared components",
   "author": "ian.mckinney <baseballrocks@gmail.com>",
   "homepage": "https://github.com/i-mckinney/helixmonorepo/tree/master/packages/library#readme",
