@@ -1,17 +1,22 @@
 import React from "react";
 import MUIButton from ".";
+import ThemeSelector from "../../themes/ThemeSelector";
+import { withKnobs, text, boolean, number } from "@storybook/addon-knobs";
 
 export default {
-    title:"MUIButton"
+    title:"MUIButton",
+    decorators: [withKnobs],
 }
 
-export const basicButton = ()=> <MUIButton> Basic Button</MUIButton>
+export const basicButton = () => <ThemeSelector><MUIButton> Basic Button</MUIButton></ThemeSelector>
 
-export const coloredButton = ()=> 
+export const coloredButton = () => 
 <>
+<ThemeSelector>
 <MUIButton type="primary"> Primary Button</MUIButton>
 <br/>
 <br/>
 <MUIButton type="secondary"> Secondary Button</MUIButton>
+</ThemeSelector>
 </>
-export const disabledButton = ()=> <MUIButton disabled > Primary Button</MUIButton>
+export const disabledButton = () => <ThemeSelector><MUIButton disabled > Primary Button</MUIButton></ThemeSelector>
