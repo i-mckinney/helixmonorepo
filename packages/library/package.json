@@ -1,6 +1,6 @@
 {
   "name": "helixmonorepo-lib",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "> library of shared components",
   "author": "ian.mckinney <baseballrocks@gmail.com>",
   "homepage": "https://github.com/i-mckinney/helixmonorepo/tree/master/packages/library#readme",
@@ -37,7 +37,9 @@
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
     "@storybook/addon-actions": "^6.0.20",
+    "@storybook/addon-docs": "^6.0.20",
     "@storybook/addon-essentials": "^6.0.20",
+    "@storybook/addon-knobs": "^6.0.20",
     "@storybook/addon-links": "^6.0.20",
     "auto": "^9.52.0",
     "babel-loader": "^8.1.0",
