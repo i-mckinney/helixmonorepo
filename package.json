@@ -1,0 +1,21 @@
+{
+  "name": "helixmonorepo",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i-mckinney/helixmonorepo.git"
+  },
+  "author": "Helix Consulting Partners",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/i-mckinney/helixmonorepo/issues"
+  },
+  "homepage": "https://github.com/i-mckinney/helixmonorepo#readme",
+  "description": "",
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}
