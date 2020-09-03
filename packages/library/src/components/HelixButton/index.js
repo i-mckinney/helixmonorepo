@@ -13,6 +13,7 @@ const buttonStyles = makeStyles((theme) => ({
 /**
  * @return {JSX} returns a reusable button form control component
  */
+
 export default function HelixButton(props) {
   /**
    * text: text string communicating to user the button action
