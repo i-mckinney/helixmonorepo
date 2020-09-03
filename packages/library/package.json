@@ -20,7 +20,8 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build": "babel src --out-dir lib"
+    "build": "babel src --out-dir lib",
+    "build-story": "build-storybook"
   },
   "bugs": {
     "url": "https://github.com/i-mckinney/helixmonorepo/issues"
