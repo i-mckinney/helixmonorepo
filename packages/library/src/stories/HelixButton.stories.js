@@ -1,7 +1,7 @@
 import React from "react";
-import HelixButton from ".";
+import HelixButton from "../components/HelixButton/index";
 import { withKnobs } from "@storybook/addon-knobs";
-import ThemeSelector from "../../themes/ThemeSelector"
+import ThemeSelector from "../themes/ThemeSelector"
 
 export default {
     title:"Helix Button",
