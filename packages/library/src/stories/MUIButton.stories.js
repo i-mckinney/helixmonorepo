@@ -1,6 +1,6 @@
 import React from "react";
-import MUIButton from ".";
-import ThemeSelector from "../../themes/ThemeSelector";
+import MUIButton from "../components/MUIButton/index";
+import ThemeSelector from "../themes/ThemeSelector";
 import { withKnobs, text, boolean, number } from "@storybook/addon-knobs";
 
 export default {

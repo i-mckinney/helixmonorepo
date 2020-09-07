@@ -1,6 +1,6 @@
 {
   "name": "helixmonorepo-lib",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "> library of shared components",
   "author": "ian.mckinney <baseballrocks@gmail.com>",
   "homepage": "https://github.com/i-mckinney/helixmonorepo/tree/master/packages/library#readme",
@@ -20,14 +20,15 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build": "babel src --out-dir lib"
+    "build": "npx babel src --out-dir lib --ignore \"src/**/*.stories.js\",\"src/**/*.stories.mdx\""
   },
   "bugs": {
     "url": "https://github.com/i-mckinney/helixmonorepo/issues"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.0",
-    "@storybook/react": "^6.0.20",
+    "@storybook/react": "^6.0.21",
+    "concurrently": "^5.3.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
@@ -36,11 +37,11 @@
     "@babel/core": "^7.11.4",
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
-    "@storybook/addon-actions": "^6.0.20",
-    "@storybook/addon-docs": "^6.0.20",
-    "@storybook/addon-essentials": "^6.0.20",
-    "@storybook/addon-knobs": "^6.0.20",
-    "@storybook/addon-links": "^6.0.20",
+    "@storybook/addon-actions": "^6.0.21",
+    "@storybook/addon-docs": "^6.0.21",
+    "@storybook/addon-essentials": "^6.0.21",
+    "@storybook/addon-knobs": "^6.0.21",
+    "@storybook/addon-links": "^6.0.21",
     "auto": "^9.52.0",
     "babel-loader": "^8.1.0",
     "react-is": "^16.13.1"
