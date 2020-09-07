@@ -6,7 +6,7 @@ import teal from "@material-ui/core/colors/teal";
 import yellow from "@material-ui/core/colors/yellow";
 import deepOrange from "@material-ui/core/colors/deepOrange";
 
-export default createMuiTheme({
+const tropical = createMuiTheme({
   palette: {
     primary: lime,
     secondary: teal,
@@ -24,3 +24,5 @@ export default createMuiTheme({
     danger: "orange"
   }
 });
+
+export default tropical

@@ -3,9 +3,9 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import { select } from "@storybook/addon-knobs";
 
 import dark from "./dark";
-import testTheme from "./testTheme";
+import tropical from "./testTheme";
 
-const themes = { dark: dark, testTheme: testTheme };
+const themes = { dark: dark, tropical: tropical };
 const themeNames = Object.keys(themes);
 
 export default ({ children }) => {
