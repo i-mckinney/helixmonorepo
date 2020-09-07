@@ -19,7 +19,7 @@ var _deepOrange = _interopRequireDefault(require("@material-ui/core/colors/deepO
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-var _default = (0, _styles.createMuiTheme)({
+var tropical = (0, _styles.createMuiTheme)({
   palette: {
     primary: _lime["default"],
     secondary: _teal["default"],
@@ -37,5 +37,5 @@ var _default = (0, _styles.createMuiTheme)({
     danger: "orange"
   }
 });
-
+var _default = tropical;
 exports["default"] = _default;

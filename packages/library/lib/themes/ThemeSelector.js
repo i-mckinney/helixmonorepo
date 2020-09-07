@@ -19,7 +19,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 
 var themes = {
   dark: _dark["default"],
-  testTheme: _testTheme["default"]
+  tropical: _testTheme["default"]
 };
 var themeNames = Object.keys(themes);
 

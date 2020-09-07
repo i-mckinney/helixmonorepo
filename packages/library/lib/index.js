@@ -21,11 +21,19 @@ Object.defineProperty(exports, "dark", {
     return _dark.dark;
   }
 });
+Object.defineProperty(exports, "tropical", {
+  enumerable: true,
+  get: function get() {
+    return _testTheme.tropical;
+  }
+});
 
 var _MUIButton = _interopRequireDefault(require("./components/MUIButton"));
 
 var _HelixButton = _interopRequireDefault(require("./components/HelixButton"));
 
 var _dark = require("./themes/dark");
+
+var _testTheme = require("./themes/testTheme");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
