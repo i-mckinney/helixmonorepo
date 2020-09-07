@@ -18,13 +18,13 @@ Object.defineProperty(exports, "HelixButton", {
 Object.defineProperty(exports, "dark", {
   enumerable: true,
   get: function get() {
-    return _dark.dark;
+    return _dark["default"];
   }
 });
 Object.defineProperty(exports, "tropical", {
   enumerable: true,
   get: function get() {
-    return _testTheme.tropical;
+    return _testTheme["default"];
   }
 });
 
@@ -32,8 +32,8 @@ var _MUIButton = _interopRequireDefault(require("./components/MUIButton"));
 
 var _HelixButton = _interopRequireDefault(require("./components/HelixButton"));
 
-var _dark = require("./themes/dark");
+var _dark = _interopRequireDefault(require("./themes/dark"));
 
-var _testTheme = require("./themes/testTheme");
+var _testTheme = _interopRequireDefault(require("./themes/testTheme"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
