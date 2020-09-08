@@ -62,7 +62,7 @@ export default function Hook() {
 ```
 
 ## For App level (Everywhere) Scope use Themes. All themes will be exported from in this lib
-### Creating a theme (inside of src/themes)
+### ONLY create a theme inside of packages/library/src/themes
 ```
 import { createMuiTheme } from "@material-ui/core/styles";
 
@@ -79,9 +79,43 @@ export default dark
 export {default as dark} from "./themes/dark";
 ```
 
-#### Importing a theme
+#### Importing a theme (do at App level - Works like Context - read up on React Context to understand this more)
 ```
-import {dark} from 'helixmonorepo-lib'
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+import { HelixButton } from "helixmonorepo-lib"
+import { tropical } from "helixmonorepo-lib"
+import { ThemeProvider } from "@material-ui/core/styles";
+
+function App() {
+  return (
+    <ThemeProvider theme={tropical}>
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>
+            Edit <code>src/App.js</code> and save to reload.
+          </p>
+          <a
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn React
+          </a>
+            <HelixButton text={"123123TEST"} color={"primary"}></HelixButton>
+            <HelixButton text={"SPOOKY"} color={"secondary"}></HelixButton>
+        </header>
+      </div>        
+    </ThemeProvider>
+
+  );
+}
+
+export default App;
+
 ```
 
 #### Adding a theme to theme selector in storybook in (src/themes)
