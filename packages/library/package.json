@@ -1,6 +1,6 @@
 {
   "name": "helixmonorepo-lib",
-  "version": "0.4.5",
+  "version": "1.0.2",
   "description": "> library of shared components",
   "author": "ian.mckinney <baseballrocks@gmail.com>",
   "homepage": "https://github.com/i-mckinney/helixmonorepo/tree/master/packages/library#readme",
@@ -19,8 +19,8 @@
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
-    "storybook": "start-storybook -p 6006",
-    "build": "npx babel src --out-dir lib --ignore \"src/**/*.stories.js\",\"src/**/*.stories.mdx\""
+    "start-dev": "npm install && start-storybook -p 6006",
+    "build": "npm install && npx babel src --out-dir lib --ignore \"src/**/*.stories.js\",\"src/**/*.stories.mdx\""
   },
   "bugs": {
     "url": "https://github.com/i-mckinney/helixmonorepo/issues"
@@ -47,5 +47,6 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-is": "^16.13.1"
-  }
+  },
+  "gitHead": "65f8131e2be31cb8e353ada2c9295cd1af2f9bb1"
 }
