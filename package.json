@@ -2,7 +2,8 @@
   "name": "helixmonorepo",
   "version": "0.2.2",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "lerna run build && lerna run storybook & lerna run start-dev"
   },
   "repository": {
     "type": "git",
