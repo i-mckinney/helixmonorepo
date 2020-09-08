@@ -2,7 +2,7 @@
   "name": "companyportal",
   "version": "1.0.0",
   "description": "Company Views",
-  "author": "i-mckinney <baseballrocks@gmail.com>",
+  "author": "ian.mckinney <baseballrocks@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -43,5 +43,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "gitHead": "0137302f93c29a96337b548f42e6dd27bb5d7a87"
 }

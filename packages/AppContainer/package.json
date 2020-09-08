@@ -2,7 +2,7 @@
   "name": "appcontainer",
   "version": "1.0.0",
   "description": "main webapp container microservice",
-  "author": "i-mckinney <baseballrocks@gmail.com>",
+  "author": "ian.mckinney <baseballrocks@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -52,5 +52,6 @@
     "lint-staged": "^10.2.11",
     "nodemon": "^2.0.4",
     "prettier": "^2.0.5"
-  }
+  },
+  "gitHead": "0137302f93c29a96337b548f42e6dd27bb5d7a87"
 }
