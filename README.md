@@ -7,8 +7,8 @@
 - ##### Install lerna globally (Do once per machine)
 `npm i -g lerna`
 
-- ##### Start Developing
-`npm run start-dev (from root)` 
+- ##### Start Developing  (from root)
+`npm run start-dev` 
 
 - ##### if you want to clear out all your node modules (in child folders - remember to run lerna bootstrap again)
 `lerna clean -y` 
