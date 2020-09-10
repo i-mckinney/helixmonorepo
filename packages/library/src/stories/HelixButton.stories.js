@@ -4,7 +4,7 @@ import { withKnobs } from "@storybook/addon-knobs";
 import ThemeSelector from "../themes/ThemeSelector"
 
 export default {
-    title:"Helix Button",
+    title:"Helix Components/Helix Button",
     decorators: [withKnobs],
     component: HelixButton,
     argTypes: { onClick: { action: 'clicked' } }
