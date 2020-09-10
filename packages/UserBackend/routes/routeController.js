@@ -16,7 +16,7 @@ exports.createUser = (request, response) => {
 exports.getUser = (request, response) => {
     const userId = request.params._id;
 
-    dbCollection.findOne({ _id: userId }, (error, result) => {
+    dbCollection.findOne({ "_id.$oid": userId }, (error, result) => {
         if (error) throw error;
         // return item
         response.json(result);
@@ -32,11 +32,11 @@ exports.getAllUsers = (request, response) => {
 }
 
 exports.updateUser = (request, response) => {
-    const userId = request.params._id;
+    const userId = request.params.id;
     const user = request.body;
     console.log("Editing item: ", userId, " to be ", user);
 
-    dbCollection.updateOne({ _id: userId }, { $set: user }, (error, result) => {
+    dbCollection.updateOne({ "_id.$oid": userId }, { $set: user }, (error, result) => {
         if (error) throw error;
         // send back entire updated list, to make sure frontend data is up-to-date
         dbCollection.find().toArray(function(_error, _result) {
@@ -47,10 +47,10 @@ exports.updateUser = (request, response) => {
 }
 
 exports.deleteUser = (request, response) => {
-    const userId = request.params._id;
+    const userId = request.params.id;
     console.log("Delete item with id: ", userId);
 
-    dbCollection.deleteOne({ _id: userId }, function(error, result) {
+    dbCollection.deleteOne({ "_id.$oid": userId }, function(error, result) {
         if (error) throw error;
         // send back entire updated list after successful request
         dbCollection.find().toArray(function(_error, _result) {
