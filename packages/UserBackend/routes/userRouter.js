@@ -1,8 +1,7 @@
+// import modules
 const express = require('express');
 const router = express.Router();
 const {ObjectId} = require('mongodb');
-
-// import modules
 const dateTimeHelper = require('../utils/dateTimeHelper');
 
 // db setup
